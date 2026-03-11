@@ -1,0 +1,114 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* głowa*/
+.header {
+  background-color: #6dd44a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 3px solid black;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+}
+
+.header-logo {
+  font-size: 80px;
+}
+
+/* nawigejszyn */
+.nawigacja {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* informejszyn */
+.intro-banner {
+  background-color: #6dd44a;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro-text {
+  font-size: 22px;
+  color: black;
+  line-height: 1.8;
+}
+
+.zwierzaki {
+  font-size: 20px;
+}
+
+/* zdjecia */
+.zdjecia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  height: 300px;
+}
+
+.zdjecia > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.zdjecia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* stopa  */
+.footer {
+  background-color: #00c8d4;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: black;
+  border-top: 3px solid black;
+}
+
+.footer strong {
+  font-weight: bold;
+}
+
+/* wypełnienie */
+.zdjecia {
+  flex: 1;
+}
